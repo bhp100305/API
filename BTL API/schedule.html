@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Lịch dạy</title>
+<link rel="stylesheet" href="/css/admin.css">
+<link rel="stylesheet" href="/css/schedule.css">
+</head>
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR (giữ nguyên của bạn) -->
+<div class="sidebar">
+    <div class="logo">
+        <img src="/images/gtvt.png">
+        <div class="school-name">EDUSO</div>
+    </div>
+
+    <ul>
+            <li onclick="goHome()">🏠 Trang Chủ</li>
+            <li onclick="goClass()">📚 Lớp Học</li>
+            <li onclick="goTeacher()">📚 Giảng Viên</li>
+            <li onclick="goSchedule()">📅 Lịch Dạy</li>
+            <li onclick="goNews()">📰 Tin Tức</li>
+            <li onclick="goGuide()">❓ Hướng Dẫn</li>
+        </ul>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<h2>📅 Lịch dạy tuần</h2>
+
+<button class="btn-add" onclick="openAdd()">+ Thêm lịch</button>
+
+<div id="calendar"></div>
+
+</div>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+    <div class="popup-box">
+
+        <h3 id="title">Thêm lịch</h3>
+
+        <select id="class_id"></select>
+        <input id="room" placeholder="Phòng">
+        <input id="start" placeholder="Giờ bắt đầu (08:00)">
+        <input id="end" placeholder="Giờ kết thúc (10:00)">
+
+        <select id="day">
+            <option value="2">Thứ 2</option>
+            <option value="3">Thứ 3</option>
+            <option value="4">Thứ 4</option>
+            <option value="5">Thứ 5</option>
+            <option value="6">Thứ 6</option>
+            <option value="7">Thứ 7</option>
+            <option value="8">CN</option>
+        </select>
+
+        <div class="popup-actions">
+            <button class="btn-save" onclick="save()">Lưu</button>
+            <button class="btn-cancel" onclick="closePopup()">Hủy</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="/js/schedule.js"></script>
+<script src="/js/admin.js"></script>
+
+</body>
+</html>

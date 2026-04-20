@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu hỏi</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/questions.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/images/gtvt.png" alt="Logo">
+            <div class="school-name">EDUSO</div>
+        </div>
+
+        <ul>
+            <li onclick="goHome()">🏠 Trang Chủ</li>
+            <li onclick="goClass()">📚 Lớp Học</li>
+            <li onclick="goTeacher()">📚 Giảng Viên</li>
+            <li onclick="goSchedule()">📅 Lịch Dạy</li>
+            <li onclick="goNews()">📰 Tin Tức</li>
+            <li onclick="goGuide()">❓ Hướng Dẫn</li>
+        </ul>
+    </div>
+    <div class="main">
+        <h2>📖 Câu hỏi</h2>
+        <div id="list"></div>
+    </div>
+</div>
+
+<script src="/js/questions.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Hướng dẫn nâng cao</title>
+
+<link rel="stylesheet" href="/css/admin.css">
+<link rel="stylesheet" href="/css/guide.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="logo">
+            <img src="/images/gtvt.png" alt="Logo">
+            <div class="school-name">EDUSO</div>
+        </div>
+    <ul>
+            <li onclick="goHome()">🏠 Trang Chủ</li>
+            <li onclick="goClass()">📚 Lớp Học</li>
+            <li onclick="goTeacher()">📚 Giảng Viên</li>
+            <li onclick="goSchedule()">📅 Lịch Dạy</li>
+            <li onclick="goNews()">📰 Tin Tức</li>
+            <li onclick="goGuide()">❓ Hướng Dẫn</li>
+        </ul>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<h2>🚀 Hướng dẫn sử dụng hệ thống</h2>
+
+<!-- SEARCH -->
+<input type="text" id="search" placeholder="🔍 Tìm hướng dẫn...">
+
+<div class="guide-container">
+
+<!-- MENU TRÁI -->
+<div class="guide-menu">
+    <div onclick="loadGuide(0)">Bắt đầu</div>
+    <div onclick="loadGuide(1)">Làm bài</div>
+    <div onclick="loadGuide(2)">Xem điểm</div>
+</div>
+
+<!-- CONTENT -->
+<div class="guide-content">
+
+<h3 id="title"></h3>
+
+<!-- VIDEO -->
+<div class="video">
+<iframe id="video" width="100%" height="250"></iframe>
+</div>
+
+<!-- STEP -->
+<div id="steps"></div>
+
+<!-- CONTROL -->
+<div class="controls">
+    <button onclick="prev()">⬅ Back</button>
+    <button onclick="next()">Next ➡</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- FAQ -->
+<h3>❓ FAQ</h3>
+<div id="faq"></div>
+
+</div>
+</div>
+
+<script src="/js/guide.js"></script>
+
+</body>
+</html>
